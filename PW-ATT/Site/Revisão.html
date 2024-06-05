@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/html.ico - Copia.ico" type="image/x-icon">
+  <title>Pagamento de Ingressos</title>
+  <link rel="stylesheet" href="Revisão.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pagamento de Ingressos</h1>
+    <form id="paymentForm">
+      <label for="name">Nome do Titular do Cartão:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <input type="radio" id="debit" name="paymentType" value="debit">
+      <label for="debit">Débito</label>
+      <input type="radio" id="credit" name="paymentType" value="credit">
+      <label for="credit">Crédito</label><br><br>
+
+      <div id="cardDetails" style="display: none;">
+        <label for="cardNumber">Número do Cartão:</label>
+        <input type="text" id="cardNumber" name="cardNumber" pattern="(4|5)[0-9]{15}" required><br><br>
+
+        <div id="cardType"></div><br>
+
+        <label for="expirationDate">Validade do Cartão:</label>
+        <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" required><br><br>
+
+        <label for="cpf">CPF do Titular:</label>
+        <input type="text" id="cpf" name="cpf" pattern="\d{11}" required><br><br>
+
+        <label for="securityCode">Código de Segurança:</label>
+        <input type="text" id="securityCode" name="securityCode" pattern="[0-9]{3}" required><br><br>
+      </div>
+
+      <input type="radio" id="pix" name="paymentType" value="pix">
+      <label for="pix">PIX</label><br><br>
+
+      <div id="qrCode" style="display: none;">
+        <img src="assets/QRcode1.jpg" alt="Seu QR Code">
+      </div><br><br>
+
+      <input type="submit" value="Confirmação de Dados">
+      <a href="Comprovante.html" class="btn">Confirmar Pagamento</a>
+    </form>
+  </div>
+  <script src="Revisão.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - São Paulo FC</title>
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Crie uma conta no São Paulo FC</h2>
+        <form id="signup-form" action="http://localhost:3000/signup" method="POST">
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <input type="password" id="password" name="password" placeholder="Senha" required>
+            <a href="#" id="forgot-password">Esqueci minha senha</a>
+            <input type="submit" value="Cadastrar">
+        </form>
+        <p>Não tem conta? <a href="login.html" id="signup-link">Cadastre-se agora</a>.</p>
+        <p>ou entre com:</p>
+        <button class="google" onclick="loginWithGoogle()">Entrar com Google</button>
+        <button class="facebook" onclick="loginWithFacebook()">Entrar com Facebook</button>
+    </div>
+
+    <script src="Cadastro.js"></script>
+</body>
+</html>

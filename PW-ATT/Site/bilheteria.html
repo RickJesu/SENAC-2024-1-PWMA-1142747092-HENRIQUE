@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingressos São Paulo FC</title>
+    <link rel="stylesheet" href="Bilheteria.css">
+</head>
+<body>
+    <header>
+        <h1>Ingressos São Paulo FC</h1>
+    </header>
+    
+    <section class="slideshow-container">
+        <h2>Planos de Sócio Torcedor</h2>
+        <div class="mySlides fade">
+            <img src="assets/socio.png" alt="Plano Vermelho">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/socio.png" alt="Plano Branco">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/socio.png" alt="Plano 3">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+    <br>
+
+    <section class="carousel-container">
+        <h2>Jogos Disponíveis</h2>
+        <div class="carousel">
+            <div class="carousel-item"><img src="assets/jogo.jpg" alt="Brasileirão Betano"><p>São Paulo x Fortaleza</p></div>
+            <div class="carousel-item"><img src="assets/libertadores.jpg" alt="Copa Libertadores"><p>São Paulo x Talleres</p></div>
+            <div class="carousel-item"><img src="assets/copbr.png" alt="Copa do Brasileirão"><p>São Paulo x Aguia de Marabá</p></div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>Selecione seus ingressos</h2>
+        <form id="ticketForm">
+            <label for="game">Escolha o jogo:</label>
+            <select id="game" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="brasileirao">São Paulo x Fortaleza</option>
+                <option value="libertadores">São Paulo x Talleres</option>
+                <option value="copadobrasil">São paulo x Aguia de Marabá</option>
+            </select>
+            
+            <label for="sector">Escolha o setor:</label>
+            <select id="sector" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="arquibancada_sul">Arquibancada Sul - R$70</option>
+                <option value="arquibancada_leste">Arquibancada Leste - R$100</option>
+                <option value="arquibancada_oeste">Arquibancada Oeste - R$100</option>
+                <option value="arquibancada_norte">Arquibancada Norte - R$40</option>
+                <option value="cadeira_leste">Cadeira Leste - R$200</option>
+                <option value="cadeira_oeste">Cadeira Oeste - R$200</option>
+                <option value="cadeira_norte">Cadeira Norte - R$150</option>
+                <option value="cadeira_sul">Cadeira Sul - R$150</option>
+                <option value="camarote">Camarote - R$300</option>
+            </select>
+
+            <label for="quantity">Quantidade de ingressos:</label>
+            <input type="number" id="quantity" min="1" required>
+            
+            <label for="email">E-mail (sócio torcedor):</label>
+            <input type="email" id="email">
+            
+            <label for="plan">Plano de Sócio Torcedor:</label>
+            <select id="plan">
+                <option value="" disabled selected>Selecione</option>
+                <option value="vermelho">Vermelho - 50% desconto</option>
+                <option value="branco">Branco - 70% desconto</option>
+                <option value="preto">Preto - 70% desconto</option>
+                <option value="tricolor">Tricolor - 80% desconto</option>
+                <option value="diamante">Diamante - 90% desconto</option>
+            </select>
+
+            <button type="submit">Comprar</button>
+        </form>
+    </section>
+
+    <script src="Bilheteria.js"></script>
+</body>
+</html>

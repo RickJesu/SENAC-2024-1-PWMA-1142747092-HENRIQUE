@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/html.ico.ico" type="image/x-icon">
+    <title>Confirmação de Pagamento - São Paulo FC</title>
+    <link rel="stylesheet" href="Comprovante.css">
+</head>
+<body>
+    <div class="confirmation-container">
+        <h1>Compra Realizada com Sucesso</h1>
+        <div class="confirmation-details">
+            <p><strong>Número do Pedido:</strong> <span id="orderNumber"></span></p>
+            <p><strong>Nome do Cliente:</strong> <span id="customerName"></span></p>
+            <p><strong>Data e Horário do Jogo:</strong> <span id="gameDateTime"></span></p>
+            <div class="qr-code">
+                <img id="qrCode" src="" alt="QR Code para acesso ao evento">
+            </div>
+            <p>Desejamos um ótimo evento para o torcedor do São Paulo FC!</p>
+            <p>Acessar o evento com o seu cartão usado no ato da compra ou use o QRcode</p>
+        </div>
+    </div>
+    <a href="paginaInicial.html" class="btn">Voltar à página inicial</a>
+    <script src="Comprovante.js"></script>
+</body>
+</html>

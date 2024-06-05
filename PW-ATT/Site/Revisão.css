@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background-image: url('assets/sao-paulo-conquista-a-copa-do-brasil-19351.jpg');
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+  
+  
+}
+
+input[type="text"], input[type="submit"], input[type="radio"] {
+  margin-bottom: 30px;
+  
+}
+
+#cardDetails, #qrCode {
+  margin-top: 10px;
+}
+
+#cardType {
+  margin-bottom: 10px;
+  
+  
+}

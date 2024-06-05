@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff; /* Fundo branco */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #000; /* Texto preto */
+}
+
+.confirmation-container {
+    text-align: center;
+    background-color: #ffffff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    border: 2px solid #1c1b1b; /* Borda vermelha */
+}
+
+h1 {
+    color: #397f00; /* Título vermelho */
+    margin-bottom: 20px;
+}
+
+.confirmation-details p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #000; /* Texto preto */
+}
+
+.qr-code {
+    margin: 20px 0;
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff; /* Texto do botão branco */
+    background-color: #d32f2f; /* Fundo do botão vermelho */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0dc5cc; /* Fundo do botão vermelho escuro ao passar o mouse */
+}
